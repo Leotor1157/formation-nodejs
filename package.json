@@ -1,0 +1,25 @@
+{
+  "name": "formation-nodejs",
+  "version": "1.0.0",
+  "description": "Formation du 27 fevrier sur nodejs/MangoDB",
+  "main": "index.js",
+  "scripts": {
+    "compiler": "npx tsc --watch"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Leotor1157/formation-nodejs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Leotor1157/formation-nodejs/issues"
+  },
+  "homepage": "https://github.com/Leotor1157/formation-nodejs#readme",
+  "devDependencies": {
+    "@types/node": "^18.14.2",
+    "typescript": "^4.9.5"
+  }
+}
