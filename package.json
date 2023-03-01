@@ -4,10 +4,9 @@
   "description": "Formation du 27 fevrier sur nodejs/MangoDB",
   "main": "index.js",
   "scripts": {
-    "compiler": "npx tsc --watch",
-    "start": "node -r dotenv/config dist/index.js",
-    "start:dev": "ts-node -r dotenv/config src/index.ts",
-    "start:daemon": "nodemon -e .ts,.js,.json -w src -x \"npm run start:dev\""
+    "wattc:typescript": "npx tsc --watch",
+    "watch:app": "npx nodemon -r detenv/config dist/index.js",
+    "start": "npx concurrently npm:watch:typescript npm:watch:app"
   },
   "repository": {
     "type": "git",
@@ -27,6 +26,7 @@
   },
   "dependencies": {
     "concurrently": "^7.6.0",
-    "dotenv": "^16.0.3"
+    "dotenv": "^16.0.3",
+    "fastify": "^4.13.0"
   }
 }
